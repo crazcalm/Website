@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block css %}
+
+<link rel="stylesheet" href= {% static "css/about_page.css" %}>
+
+{% endblock css %}
+
+
+{% block title %} About me {% endblock title %}
+
+{% block side_bar_id %} 
+
+{% endblock side_bar_id %}
+
+{% block side_bar %} 
+
+<p>
+<strong>
+Education
+</strong>
+<br/><br/> 
+</p>
+
+<p>
+<strong>
+Programming beginnings 
+</strong>
+<br/><br/>
+</p>
+
+
+<p> 
+<strong>
+Why python
+</strong>
+<br/><br/>
+<p/>
+
+
+<p> 
+<strong>
+Favorite Hackathon
+</strong>
+<br/><br/> 
+<p/>
+
+
+
+<p>
+<strong>
+Who is Crazcalm
+</strong>
+<p/>
+
+
+
+{% endblock side_bar %}
+
+
+{% block content %}
+
+
+{% endblock content %}
+
+{% block scripts %}
+
+<script src= {% static "js/about_page.js" %}></script>
+
+{% endblock scripts %}
+
