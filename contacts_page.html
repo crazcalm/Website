@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block css %}
+
+<link rel="stylesheet" href= {% static "css/contacts_page.css" %}>
+
+{% endblock css %}
+
+
+{% block title %} Contacts {% endblock title %}
+
+
+{% block content %}
+
+
+
+  <table id = "contacts">
+	
+		<tr>
+		
+			<td>
+			
+				<a href = "https://github.com/crazcalm">
+				
+					<img src= {% static "img/github.png" %}/>
+			
+				</a>
+			
+			</td>
+			
+			<td>
+				
+				<a href = "https://plus.google.com/104940689031185540226/posts?utm_source=chrome_ntp_icon&utm_medium=chrome_app&utm_campaign=chrome">
+				
+					<img src= {% static "img/Google+.jpeg" %}/>
+			
+				</a>
+			
+			</td>
+		
+		
+		
+			<td>
+			
+				<a href = "http://www.linkedin.com/profile/view?id=233693620&trk=nav_responsive_tab_profile">
+				
+					<img src= {% static "img/LinkedIn.png" %}/>
+			
+				</a>
+			
+			</td>
+			
+			<td>
+			
+				<a href = "https://www.facebook.com/profile.php?id=8850165">
+				
+					<img src= {% static "img/facebook.gif" %}/>
+			
+				</a>
+			
+			</td>
+		
+		</tr>
+	
+	</table>
+	
+	<p id = "email">
+	
+		<br/>
+	
+		You can email me at crazcalm@gmail.com
+	</p>
+
+
+
+
+{% endblock content %}
