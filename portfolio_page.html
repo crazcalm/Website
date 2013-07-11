@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block css %}
+
+<link rel="stylesheet" href= {% static "css/portfolio_page.css" %}>
+
+{% endblock css %}
+
+{% block content %}
+
+<div class = "portfolio_item">
+
+  
+
+	<img src = "{% static "img/website.jpg" %}" class = "item_pic"/>
+		
+	
+
+	<div class = "item_title">
+	
+		<a href = "https://github.com/crazcalm/My_website">
+	
+			<p>
+				My first website!
+			</p>
+	
+		</a>
+	
+	</div>
+	
+	<div class = "item_description">
+	
+		<p>
+			"I cannot believe this site is done!", is what I tell people, but what I am really thinking is, "I still need to go
+			rewrite <strong> that </strong> js file...". Anyway, the code for the site will be on github. Click the description title to go check it out.
+		</p>
+	
+	</div>
+
+</div>
+
+<div class = "portfolio_item">
+
+
+	<img src = "{% static "img/old.jpg" %}" class = "item_pic"/>
+	
+
+	<div class = "item_title">
+		
+		<a href = "https://github.com/crazcalm/Pre_github_code/tree/Number-theory">
+	
+			<p>
+				My Pre-Github code
+			</p>
+			
+		</a>
+	
+	</div>
+	
+	<div class = "item_description">
+	
+		<p>
+			I started coding before I had a Github account. Most of that code is <strong> UGLY </strong> , but some of it was worth putting on github.
+		</p>
+	
+	</div>
+
+</div>
+
+{% endblock content %}
+
+{% block scripts %}
+
+<script src= {% static "js/portfolio_page.js" %}></script>
+
+{% endblock scripts %}
