@@ -1,0 +1,22 @@
+/*
+
+I really like the extends feature. That saved me a lot of trouble. 
+
+Also, depending on the order of your css fies in the HTML, you can use
+the new css file to override the main.css stuff. 
+
+Splitting everything was a good idea on my part :)
+
+*/
+
+
+{% extends "main.css" %}
+
+
+
+#side_bar_hover{
+
+  font-style: italic;
+	color: #CC0099;
+
+}
