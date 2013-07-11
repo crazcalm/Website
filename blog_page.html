@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block css %}
+
+<link rel="stylesheet" href= {% static "css/blog_page.css" %}>
+
+{% endblock css %}
+
+
+{% block side_bar_id %} 
+
+{% endblock side_bar_id %}
+
+{% block side_bar %} 
+
+<p>
+<strong>
+My website
+</strong>
+<br/><br/> 
+</p>
+
+<p>
+<strong>
+Want more?
+</strong>
+<br/><br/>
+</p>
+
+
+{% endblock side_bar %}
+
+
+{% block content %}
+
+<p>
+  This is some random content to see what happens.
+	
+	<br/>
+	<br/>
+	
+	I just need to know where tha page is placing this information.
+</p>
+
+
+{% endblock content %}
+
+{% block scripts %}
+
+<script src= {% static "js/blog_page.js" %}></script>
+
+{% endblock scripts %}
